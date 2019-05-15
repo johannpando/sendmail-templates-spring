@@ -1,0 +1,22 @@
+logging:
+    level:
+        root: WARN
+        com.example: TRACE
+---
+spring:
+    mail:
+        host: smtp.office365.com
+        port: 587
+        username: jpandode@outlook.es
+        password: Jp11022019
+        properties:
+            mail:
+                smtp:
+                    starttls:
+                        enable: true
+                        starttls:
+                            required: true
+                    auth: true
+                    connectiontimeout: 5000
+                    timeout: 5000
+                    writetimeout: 5000
