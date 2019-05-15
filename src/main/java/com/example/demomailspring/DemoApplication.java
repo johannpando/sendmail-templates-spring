@@ -15,12 +15,13 @@ public class DemoApplication {
 		SpringApplication.run(DemoApplication.class, args);
 	}
 
-	@Bean
-	public MessageSource messageSource() {
-		ReloadableResourceBundleMessageSource messageSource = new ReloadableResourceBundleMessageSource();
-		messageSource.setBasename("classpath:messages");
-		messageSource.setCacheSeconds(10); // reload messages every 10 seconds
-		return messageSource;
-	}
+	// @Bean
+	// public MessageSource messageSource() {
+	// ReloadableResourceBundleMessageSource messageSource = new
+	// ReloadableResourceBundleMessageSource();
+	// messageSource.setBasename("classpath:messages");
+	// messageSource.setCacheSeconds(10); // reload messages every 10 seconds
+	// return messageSource;
+	// }
 
 }
